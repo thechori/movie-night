@@ -1,23 +1,23 @@
+Movies = new Mongo.Collection("movies");
+
 if (Meteor.isClient) {
-  // counter starts at 0
-  Session.setDefault('counter', 0);
+  // Global helper
+  Template.registerHelper('formatDateGlobal', (date) => {
+    return moment(date).format('MM-DD-YYYY');
+  });
 
-  Template.hello.helpers({
-    counter: function () {
-      return Session.get('counter');
+  // Helpers specific to the body
+  Template.body.helpers({
+    movies: function() {
+      return Movies.find({});
     }
   });
 
-  Template.hello.events({
-    'click button': function () {
-      // increment the counter when button is clicked
-      Session.set('counter', Session.get('counter') + 1);
-    }
-  });
 }
 
 if (Meteor.isServer) {
   Meteor.startup(function () {
     // code to run on server at startup
+    console.log("Spinning up server..");
   });
 }

@@ -1,14 +1,25 @@
 <head>
-  <title>movieNight</title>
+  <title>Movie List</title>
 </head>
 
 <body>
-  <h1>Welcome to Meteor!</h1>
+  <div class="container">
+    <header>
+      <h1>Movie List</h1>
+    </header>
 
-  {{> hello}}
+    <ul>
+      {{#each movies}}
+        {{> movie}}
+      {{/each}}
+    </ul>
+  </div>
 </body>
 
-<template name="hello">
-  <button>Click Me</button>
-  <p>You've pressed the button {{counter}} times.</p>
+<template name="movie">
+  <a href="{{title}}" class="movie-anchor"><li>{{title}}</li></a>
+</template>
+
+<template name="movie-info">
+  <a href="/"><li>{{title}} - {{ formatDateGlobal watchedOn}}</li></a>
 </template>
