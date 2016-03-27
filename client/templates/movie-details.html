@@ -1,0 +1,18 @@
+<template name="movie-details">
+  <head>
+    <title>Movie Details ({{title}})</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <h1>{{title}}</h1>
+      </header>
+
+      <ul>
+        <li>Watched on: {{formatDateGlobal watchedOn}}</li>
+        <li>Chosen by: {{owner}}</li>
+      </ul>
+    </div>
+  </body>
+</template>

@@ -7,7 +7,7 @@ if (Meteor.isClient) {
   });
 
   // Helpers specific to the body
-  Template.body.helpers({
+  Template.home.helpers({
     movies: function() {
       return Movies.find({});
     }
