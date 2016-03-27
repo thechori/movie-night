@@ -1,0 +1,21 @@
+<template name="home">
+  <head>
+    <title>Movie List</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <h1>Movie List</h1>
+      </header>
+
+      <ul>
+        {{#each movies}}
+          {{> movie}}
+        {{/each}}
+      </ul>
+
+      <a href="/newMovie">Add New Movie</a>
+    </div>
+  </body>
+</template>
