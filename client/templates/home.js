@@ -1,5 +1,3 @@
-Movies = new Mongo.Collection("movies");
-
 if (Meteor.isClient) {
   // Global helper
   Template.registerHelper('formatDateGlobal', (date) => {
