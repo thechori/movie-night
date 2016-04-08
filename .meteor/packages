@@ -21,3 +21,5 @@ insecure                # Allow all DB writes from clients (for prototyping)
 momentjs:moment
 iron:router
 materialize:materialize
+accounts-ui
+accounts-password
