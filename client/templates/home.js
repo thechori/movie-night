@@ -12,7 +12,12 @@ if (Meteor.isClient) {
   // Helpers specific to the body
   Template.home.helpers({
     movies: function() {
-      return Movies.find({});
+      return Movies.find({}, {
+        // Sort by date
+        sort: {
+          watchedOn: -1
+        }
+      });
     }
   });
 
