@@ -15,8 +15,11 @@ if (Meteor.isClient) {
       // Submit the movie to the movies collection
       Movies.insert({
         dateCreated: new Date(),
+        createdBy: Meteor.user().emails[0].address,
         title,
         watchedOn: date
+      }, function() {
+        Router.go('/');
       });
 
       // Clear the form

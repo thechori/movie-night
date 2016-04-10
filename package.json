@@ -1,12 +1,19 @@
 {
   "name": "movie-night",
   "version": "1.0.0",
-  "description": "",
-  "main": "movieNight.js",
+  "description": "Web application to track and organize Sunday Movie Nights",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "Ryan Teodoro",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://thechori:P0k3m0n!@github.com/thechori/movieNight.git"
+  },
+  "bugs": {
+    "url": "https://github.com/thechori/movieNight/issues"
+  },
+  "homepage": "https://github.com/thechori/movieNight#readme"
 }

@@ -1,7 +1,12 @@
 if (Meteor.isClient) {
-  // Global helper
+  // GLOBAL helper
   Template.registerHelper('formatDateGlobal', (date) => {
     return moment(date).format('MM-DD-YYYY');
+  });
+
+  // On created
+  Template.home.onCreated(function homeOnCreated() {
+    Meteor.subscribe('movies');
   });
 
   // Helpers specific to the body
