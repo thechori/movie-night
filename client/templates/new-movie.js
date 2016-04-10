@@ -4,9 +4,8 @@ if (Meteor.isClient) {
   Template.newMovie.events({
     // Works properly
     'submit form': function(event) {
+      // Prevent the page from posting back
       event.preventDefault();
-
-      console.log("submitting form from Template.newMovie.events")
 
       // Grab values from the form
       let title = event.target.title.value;
@@ -29,13 +28,4 @@ if (Meteor.isClient) {
       event.target.date.value = "";
     }
   });
-
-  Template.newMovie.helpers({
-    handleSubmit: function(event) {
-      event.preventDefault();
-      console.log("submitting the form!");
-      console.log(event);
-    }
-  });
-
 }
