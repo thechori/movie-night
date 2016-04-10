@@ -11,11 +11,13 @@ if (Meteor.isClient) {
       // Grab values from the form
       let title = event.target.title.value;
       let date = event.target.date.value;
+      let chosenBy = event.target.chosenBy.value;
 
       // Submit the movie to the movies collection
       Movies.insert({
         dateCreated: new Date(),
         createdBy: Meteor.user().emails[0].address,
+        chosenBy: chosenBy,
         title,
         watchedOn: date
       }, function() {
