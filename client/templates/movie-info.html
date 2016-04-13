@@ -9,14 +9,33 @@
       {{> loginButtons}}
     </header>
 
-    <div class="center">
-      <h3>{{title}}</h3>
-      <p>Chosen by: {{chosenBy}}</p>
-      <p>Watched on: {{watchedOn}}</p>
-    </div>
+    {{#unless isCurrentlyEditing}}
+      <div id="movie-info" class="center">
+        <h3>{{title}}</h3>
+        <p>Chosen by: {{chosenBy}}</p>
+        <p>Watched on: {{watchedOn}}</p>
+      </div>
+    {{else}}
+      <div id="edit-movie-info" class="center">
+        <form id="edit-movie-info-form">
+          <h3><input type="text" name="title" placeholder={{title}}></h3>
+          <p><input type="text" name="chosenBy" placeholder={{chosenBy}}></p>
+          <p><input type="text" name="watchedOn" placeholder={{watchedOn}}></p>
+        </form>
+      </div>
+    {{/unless}}
 
     <div class="center">
-      <a class="btn" href="/">Back</a>
+      {{#unless isCurrentlyEditing}}
+        <a class="btn" href="/">Back</a>
+      {{else}}
+        <a class="btn" id="cancel-edit">Cancel</a>
+      {{/unless}}
+      {{#unless isCurrentlyEditing}}
+        <a class="btn" id="edit">Edit</a>
+      {{else}}
+        <a class="btn" id="save">Save</a>
+      {{/unless}}
       <a class="btn" id="delete">Delete</a>
     </div>
   </div>
