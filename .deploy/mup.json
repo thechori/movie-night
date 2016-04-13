@@ -34,7 +34,7 @@
 
   // Configure environment
   "env": {
-    "ROOT_URL": "http://localhost",
+    "ROOT_URL": "http://45.55.226.252",
     "PORT": 3000
   },
 

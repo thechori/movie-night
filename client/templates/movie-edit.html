@@ -1,0 +1,32 @@
+<template name="movieEdit">
+<head>
+  <title>{{title}}</title>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>{{movie}}</h1>
+      {{> loginButtons}}
+    </header>
+
+    <div class="center">
+      <h3>{{title}}</h3>
+      <p>Chosen by: {{chosenBy}}</p>
+      <p>Watched on: {{watchedOn}}</p>
+    </div>
+
+    <form>
+      <input type="text" name="title" />
+      <input type="text" name="chosenBy" />
+      <input type="date" name="date" />
+      <input type="submit" />
+    </form>
+
+    <div class="center">
+      <a class="btn" href="/">Back</a>
+      <a class="btn" id="save">Save</a>
+      <a class="btn" id="delete">Delete</a>
+    </div>
+  </div>
+</body>
+</template>
