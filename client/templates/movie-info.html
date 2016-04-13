@@ -18,9 +18,9 @@
     {{else}}
       <div id="edit-movie-info" class="center">
         <form id="edit-movie-info-form">
-          <h3><input type="text" name="title" placeholder={{title}}></h3>
-          <p><input type="text" name="chosenBy" placeholder={{chosenBy}}></p>
-          <p><input type="text" name="watchedOn" placeholder={{watchedOn}}></p>
+          <h3><input type="text" id="title" name="title" placeholder={{title}} value={{title}}></h3>
+          <p><input type="text" id="chosenBy" name="chosenBy" placeholder={{chosenBy}} value={{chosenBy}}></p>
+          <p><input type="date" id="watchedOn" name="watchedOn" placeholder={{watchedOn}} value={{watchedOn}}></p>
         </form>
       </div>
     {{/unless}}
