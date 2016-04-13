@@ -33,29 +33,31 @@ Template.movieInfo.events({
     if (Session.get("isEditing")) {
       // If currently editing, stop
       Session.set("isEditing", false);
-      console.log("stopping edit");
-
-      // Save the current page data, replace the <p>'s with <input> fields
-      // title
-
-      // chosenBy
-
-      // watchedOn
-
-
     } else {
       // If not editing, start
       Session.set("isEditing", true);
-      console.log("starting edit");
     }
   },
 
   'click #cancel-edit': function(event) {
-
+    console.log("Cancelling edit");
+    Session.set("isEditing", false);
   },
 
   'click #save': function(event) {
+    // Submit new data to database
+    let newTitle = $('#title').val();
+    let newChosenBy = $('#chosenBy').val();
+    let newWatchedOn = $('#watchedOn').val();
 
+    Movies.update(this._id, {
+      title: newTitle,
+      chosenBy: newChosenBy,
+      watchedOn: newWatchedOn,
+      lastEditedOn: new Date()
+    });
+
+    Session.set("isEditing", false);
   },
 
   'click #delete': function(event) {
