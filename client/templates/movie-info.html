@@ -14,6 +14,9 @@
         <h3>{{title}}</h3>
         <p>Chosen by: {{chosenBy}}</p>
         <p>Watched on: {{watchedOn}}</p>
+        {{#if lastEditedOn}}
+          <p>Last edited on: {{lastEditedOn}}</p>
+        {{/if}}
       </div>
     {{else}}
       <div id="edit-movie-info" class="center">
