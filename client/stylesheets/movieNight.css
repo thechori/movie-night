@@ -146,3 +146,7 @@ header .hide-completed {
 .movie {
 
 }
+
+.error-message {
+  text-align: center;
+}

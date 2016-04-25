@@ -21,6 +21,8 @@
         <a href="{{pathFor route='newMovie'}}" class="btn">Add New Movie</a>
       </div>
 
+      {{else}}
+      <div class="error-message">You must be logged in to view the movie list</div>
       {{/if}}
     </div>
   </body>
