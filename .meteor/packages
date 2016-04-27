@@ -22,3 +22,5 @@ iron:router
 materialize:materialize
 accounts-ui
 accounts-password
+sergeyt:typeahead
+autopublish
