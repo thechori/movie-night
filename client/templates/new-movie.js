@@ -1,6 +1,24 @@
 if (Meteor.isClient) {
   console.log("isClient");
 
+  Template.newMovie.onRendered(function() {
+    console.log("onRendered");
+    console.log(Meteor.users.find().fetch())
+    Meteor.typeahead.inject();
+  });
+
+  Template.newMovie.helpers({
+    users: function() {
+      console.log("users");
+      console.log(Meteor.users.find().fetch())
+
+      return Meteor.users.find().fetch().map(function(user) {
+        console.log(user);
+        return user.emails[0].address
+      })
+    }
+  })
+
   Template.newMovie.events({
     // Works properly
     'submit form': function(event) {
