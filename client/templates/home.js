@@ -18,6 +18,11 @@ if (Meteor.isClient) {
           watchedOn: -1
         }
       });
+    },
+
+    favoritePokemon: function() {
+      // return Meteor.call("getFavoritePokemon")
+      return Meteor.settings.public.favoritePokemon
     }
   });
 
