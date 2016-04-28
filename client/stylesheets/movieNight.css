@@ -150,3 +150,11 @@ header .hide-completed {
 .error-message {
   text-align: center;
 }
+
+.twitter-typeahead {
+  display: block !important;
+}
+
+.tt-menu {
+  top: 75% !important;
+}
