@@ -7,9 +7,11 @@
 6 info start movie-night@1.0.0
 7 verbose unsafe-perm in lifecycle true
 8 info movie-night@1.0.0 Failed to exec start script
-9 verbose stack Error: movie-night@1.0.0 start: `MONGO_URL=mongodb://movieAdmin:moviePassword@candidate.52.mongolayer.com:10938,candidate.62.mongolayer.com:10823/movie-night?replicaSet=set-571e6294cf1f1e2c37000917meteor --settings settings.json`
-9 verbose stack spawn ENOENT
-9 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/spawn.js:17:16)
+9 verbose stack Error: movie-night@1.0.0 start: `MONGO_URL=mongodb://movieAdmin:moviePassword@candidate.52.mongolayer.com:10938,candidate.62.mongolayer.com:10823/movie-night?replicaSet=set-571e6294cf1f1e2c37000917 meteor --settings settings.json`
+9 verbose stack Exit status 254
+9 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:213:16)
+9 verbose stack     at EventEmitter.emit (events.js:110:17)
+9 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/spawn.js:24:14)
 9 verbose stack     at ChildProcess.emit (events.js:110:17)
 9 verbose stack     at maybeClose (child_process.js:1015:16)
 9 verbose stack     at Process.ChildProcess._handle.onexit (child_process.js:1087:5)
@@ -19,18 +21,15 @@
 13 error argv "node" "/usr/local/bin/npm" "start"
 14 error node v0.12.7
 15 error npm  v2.11.3
-16 error file sh
-17 error code ELIFECYCLE
-18 error errno ENOENT
-19 error syscall spawn
-20 error movie-night@1.0.0 start: `MONGO_URL=mongodb://movieAdmin:moviePassword@candidate.52.mongolayer.com:10938,candidate.62.mongolayer.com:10823/movie-night?replicaSet=set-571e6294cf1f1e2c37000917meteor --settings settings.json`
-20 error spawn ENOENT
-21 error Failed at the movie-night@1.0.0 start script 'MONGO_URL=mongodb://movieAdmin:moviePassword@candidate.52.mongolayer.com:10938,candidate.62.mongolayer.com:10823/movie-night?replicaSet=set-571e6294cf1f1e2c37000917meteor --settings settings.json'.
-21 error This is most likely a problem with the movie-night package,
-21 error not with npm itself.
-21 error Tell the author that this fails on your system:
-21 error     MONGO_URL=mongodb://movieAdmin:moviePassword@candidate.52.mongolayer.com:10938,candidate.62.mongolayer.com:10823/movie-night?replicaSet=set-571e6294cf1f1e2c37000917meteor --settings settings.json
-21 error You can get their info via:
-21 error     npm owner ls movie-night
-21 error There is likely additional logging output above.
-22 verbose exit [ 1, true ]
+16 error code ELIFECYCLE
+17 error movie-night@1.0.0 start: `MONGO_URL=mongodb://movieAdmin:moviePassword@candidate.52.mongolayer.com:10938,candidate.62.mongolayer.com:10823/movie-night?replicaSet=set-571e6294cf1f1e2c37000917 meteor --settings settings.json`
+17 error Exit status 254
+18 error Failed at the movie-night@1.0.0 start script 'MONGO_URL=mongodb://movieAdmin:moviePassword@candidate.52.mongolayer.com:10938,candidate.62.mongolayer.com:10823/movie-night?replicaSet=set-571e6294cf1f1e2c37000917 meteor --settings settings.json'.
+18 error This is most likely a problem with the movie-night package,
+18 error not with npm itself.
+18 error Tell the author that this fails on your system:
+18 error     MONGO_URL=mongodb://movieAdmin:moviePassword@candidate.52.mongolayer.com:10938,candidate.62.mongolayer.com:10823/movie-night?replicaSet=set-571e6294cf1f1e2c37000917 meteor --settings settings.json
+18 error You can get their info via:
+18 error     npm owner ls movie-night
+18 error There is likely additional logging output above.
+19 verbose exit [ 1, true ]

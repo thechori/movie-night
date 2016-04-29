@@ -1,5 +1,15 @@
+var imdb = require('imdb-api');
+
 Template.movieInfo.onCreated(function() {
   Session.set('isEditing', false);
+
+  var movie;
+  imdb.getReq({
+    name: 'The Toxic Avenger'
+  }, function(err, things) {
+    movie = things;
+  });
+  console.log(movie);
 });
 
 Template.movieInfo.helpers({
