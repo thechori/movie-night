@@ -1,4 +1,4 @@
-var imdb = require('imdb-api');
+// var imdb = require('imdb-api');
 
 Template.movieInfo.onCreated(function() {
   Session.set('isEditing', false);
