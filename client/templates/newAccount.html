@@ -6,11 +6,16 @@
   <div class="container">
     <header>
       <h1>New Account</h1>
-      {{> loginButtons}}
     </header>
 
     <div class="center">
-
+      <form>
+        <input type="email" name="email" placeholder="Email" />
+        <input type="text" name="firstName" placeholder="First name" />
+        <input type="text" name="lastName" placeholder="Last name" />
+        <input type="submit" value="Create" class="btn" />
+        <a href="/" class="btn">Back</a>
+      </form>
     </div>
   </div>
 </body>
