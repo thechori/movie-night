@@ -9,12 +9,9 @@ if (Meteor.isClient) {
 
   Template.newMovie.helpers({
     users: function() {
-      console.log("users");
-      console.log(Meteor.users.find().fetch())
-
       return Meteor.users.find().fetch().map(function(user) {
         console.log(user);
-        return user.emails[0].address
+        return user._id
       })
     }
   })

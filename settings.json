@@ -1,7 +1,4 @@
 {
-  "public": {
-    "favoritePokemon" : "Pikachu"
-  },
   "ROOT_URL": "http://movie-night-app.herokuapp.com",
   "MONGO_URL": "mongodb://movieAdmin:moviePassword@candidate.52.mongolayer.com:10938,candidate.62.mongolayer.com:10823/movie-night?replicaSet=set-571e6294cf1f1e2c37000917"
 }

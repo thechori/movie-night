@@ -113,7 +113,7 @@ li.private {
     background-color: orange !important;
   }
   a:hover {
-    background-color: red !important;
+    /*background-color: red !important;*/
   }
   li:hover {
     background-color: #d3d3d3;
@@ -149,4 +149,12 @@ header .hide-completed {
 
 .error-message {
   text-align: center;
+}
+
+.twitter-typeahead {
+  display: block !important;
+}
+
+.tt-menu {
+  top: 75% !important;
 }
