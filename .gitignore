@@ -1,3 +1,4 @@
 node_modules/
 .deploy/mup.json
 settings.json
+settings-production.json
