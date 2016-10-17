@@ -1,6 +1,8 @@
 # movieNight
 Web application to track and organize Sunday Movie Nights
 
+Checkout the application [here](https://sunday-movie-night.herokuapp.com)
+
 ## Installation
 - Install Meteor
 
@@ -22,9 +24,3 @@ $ cd movie-night
 ```
 meteor
 ```
-
-Markdown | Less | Pretty
---- | --- | ---
-*Still* | `Renders` | **nicely**
-1 | 2 | 3
-
