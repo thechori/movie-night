@@ -12,10 +12,13 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/thechori/movieNight.git"
+    "url": "git+https://github.com/thechori/movie-night.git"
   },
   "bugs": {
-    "url": "https://github.com/thechori/movieNight/issues"
+    "url": "https://github.com/thechori/movie-night/issues"
   },
-  "homepage": "https://github.com/thechori/movieNight#readme"
+  "homepage": "https://github.com/thechori/movie-night#readme",
+  "dependencies": {
+    "meteor-node-stubs": "~0.2.0"
+  }
 }
