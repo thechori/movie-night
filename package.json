@@ -4,7 +4,7 @@
   "description": "Web application to track and organize Sunday Movie Nights",
   "main": "index.js",
   "scripts": {
-    "start": "meteor --settings settings.json",
+    "start": "meteor run",
     "simulate" : "meteor run ios --settings settings.json",
     "ios": "meteor run ios-device --settings settings.json"
   },
