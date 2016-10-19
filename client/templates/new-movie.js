@@ -19,6 +19,7 @@ if (Meteor.isClient) {
   Template.newMovie.events({
     // Works properly
     'submit form': function(event) {
+      alert('submitting');
       // Prevent the page from posting back
       event.preventDefault();
 
