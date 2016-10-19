@@ -19,7 +19,6 @@ if (Meteor.isClient) {
   Template.newMovie.events({
     // Works properly
     'submit form': function(event) {
-      alert('submitting');
       // Prevent the page from posting back
       event.preventDefault();
 
@@ -35,7 +34,14 @@ if (Meteor.isClient) {
         chosenBy: chosenBy,
         title,
         watchedOn: date
-      }, function() {
+      }, function(error, result) {
+        if (error) {
+          console.log(error);
+        }
+
+        if (result) {
+          console.log(result);
+        }
         Router.go('/');
       });
 
